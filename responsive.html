@@ -1,0 +1,434 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>lyrics</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+    </head>
+    <body>
+        <style>
+            @viewport {
+  width: device-width ;
+  zoom: 1.0 ;
+}
+@-ms-viewport {
+  width: device-width ;
+}
+@media screen and (max-width:320px) {
+  /* CSS for screens that are 320 pixels or less will be put in this section */
+}
+@media screen and (min-width:320px) and (max-width:640px) {
+  /* for screens that are at least 320 pixels wide but less than or equal to 640 pixels wide */
+}
+/* code that is here, until the first @media block, will apply to any screen size */
+#somethingorother {
+  width: 800px ;
+}
+
+@media screen and (max-width: 320px) {
+  /* comes into effect for screens less than or equal to 320 pixels */
+  #somethingorother {
+    width: 120px ;
+  }
+}
+@media screen and (min-width: 321px) and (max-width: 480px) {
+  /* comes into effect for screens between 321 and 480 pixels (inclusive) */
+  #somethingorother {
+    width: 320px ;
+  }
+}
+@media screen and (min-width: 481px) {
+  /* comes into effect for screens larger than or equal to 481 pixels */
+  #somethingorother {
+    width: 480px ;
+  }
+}
+
+/* code that is here will apply to any screen size */
+@media screen and (orientation:portrait) {
+  /* ... */
+}
+@media screen and (orientation: landscape) {
+  /* ... */
+}
+@media only screen and (max-width: 480px) {
+  /* ... */
+}
+@media not (max-width: 639px) {
+/* CSS rules for any device that is wider than 639 pixels */
+}
+#lyrics {
+    top: 120%;
+    height: 100%;
+    width: auto;
+    overflow:auto;
+    position: absolute;
+    border-style:groove;
+    border-color:black;
+    border-radius: 40px;
+    background-color: grey;
+}
+body {
+    background-color:#0ed145;
+    font-family: 'Segoe UI';
+}
+#locker {
+    height: 80%;
+    width: auto;
+    overflow:auto;
+    position: absolute;
+    border-style:groove;
+    border-color:black;
+    border-radius: 40px;
+    background-color: grey;
+}
+.dodod {
+  transition:0.5s;
+}
+.dodod:hover {
+  color: orange;
+  transition: 0.9s;
+}
+ul {
+          display: flex;
+          align-items: center;
+  justify-content: center;
+          font-family: 'Poppins';
+          box-shadow: 0 5px 20px rgba(0,0,0,0.4);
+          border-radius: 9px;
+          height:50px;
+          padding: 0;
+        list-style: none;
+        background: #f2f2f2;
+    }
+    ul li {
+        display: inline-block;
+        position: relative;
+        line-height: 21px;
+        text-align: left;
+    }
+    ul li a {
+        display: block;
+        padding: 8px 25px;
+        color: #333;
+        text-decoration: none;
+    }
+    ul li a:hover {
+        transition: 0.3s;
+        color: #3cff00;
+        background:none;
+    }
+    ul li ul.dropdown {
+        transition: 0.3s;
+        min-width: 100%;
+        height:200px; /* Set width of the dropdown */
+        background: #f2f2f2;
+        display: none;
+        position: absolute;
+        z-index: 999;
+        left: 0;
+    }
+    ul li:hover ul.dropdown {
+        transition: 0.3s;
+        display: block; /* Display the dropdown */
+    }
+    ul li ul.dropdown li {
+        transition: 0.3s;
+        display: block;
+    }
+    nav ul li:after{
+  content: '';
+  width: 0;
+  height: 3px;
+  background: #2192ff;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  font-family: 'Segoe UI';
+  padding: 0 10px;
+  margin: 0 20px;
+  cursor: pointer;
+  position: relative;
+}
+nav ul li:hover::after{
+  width:100%;
+}
+#Yasss {
+  position:absolute;
+  top: 400%;
+  width:40%;
+  background-color:#3f48cc;
+  border-radius: 100px;
+}
+#yasin {
+  width:200px;
+  height: auto;
+  transition: 0.5s;
+}
+#yasin:hover {
+  transition: 0.5s;
+  width:400px;
+  height: auto;
+}
+.heyo {
+  color:white;
+  transition: 0.5s;
+}
+.heyo:hover {
+  color:rgb(0, 0, 0);
+  transition: 0.5s;
+}
+#gogo {
+  position:relative;
+    border-radius: 100%;
+    width:40px;
+height:40px;
+ overflow:hidden;
+transition: 1.0s;
+}
+#gogo:hover{
+    transition:1.2s;
+    transform:rotate(720deg);
+    -wekbit-transform:rotate(720deg); 
+    -moz-transform:rotate(720deg); 
+}
+        </style>
+            <div id="Yasss">
+              <center><p class="heyo">Nova Comics™ presents</p>
+            <img src="yo.png" id="yasin">
+            <p class="heyo">DRAGON BALL XTREME®<br></p>
+            <p class="heyo">Coming Late 2023</p>
+            <p class="heyo">on CloudStream | Youtube | Yumblr</p></center>
+          </div>
+<link rel="stylesheet" type="text/css" media="screen and (max-width: 360px)" href="portrait.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 361px) and (max-width: 480px)" href="landscape.css">
+<link rel="stylesheet" type="text/css" media="screen and (min-width: 481px)" href="desktop.css">
+<nav id="myTopnav">
+  <ul>
+    <li class="topnav">
+      <img src="Picture1.png">
+      <ul class="dropdown">
+          <li class="responsive"><a href="new.html">Home</a></li>
+          <li class="responsive"><a href="about.html">About</a></li>
+          <li  class="responsive"><a href="archives intro.html">ARCHIVES®</a></li>
+      </ul>
+    </li>
+    <li class="topnav"><a href="characters.html">Characters</a></li>
+    <li class="topnav">
+        <a href="#" class="topnav">Movies ▾</a>
+        <ul class="dropdown">
+            <li class="responsive"><a href="releases.html">Releases</a></li>
+            <li  class="responsive"><a href="news.html">News</a></li>
+            <li  class="responsive"><a href="side movies.html">Side movies</a></li>
+        </ul>
+    </li>
+    <li>
+      <a href="#">Contact</a>
+      <ul class="dropdown">
+          <li><img src="email_grey600_24dp.png" id="gogo">novacomicsoriginal@gmail.com</li>
+          <li>0758066054</li>
+      </ul>
+  </li>
+    </li>
+    <li><a href="comics.html">Comics</a></li>
+    <li><a href="books.html">Books</a></li>
+    <li><a href="games.html">Games</a></li>
+</ul>
+</nav>
+<h1>Hello</h1>
+<p>The lyrics to your requested UK raps</p>
+<div id="lyrics">
+<h2 class="dodod">Sprinter-Central CEE and Dave</h2>
+<p class="dodod">
+    The mandem too inconsiderate<br>
+Five-star hotel, smoking cigarette<br>
+Mixin' codeine up with the phenergan<br>
+She got thick but she wanna get thin again
+<br>Drinkin' apple cider vinegar<br>
+Wearin' Skim 'cause she wanna be Kim and 'em<br>
+Uh, alright<br>
+I know that you're bad, stop actin' innocent<br>
+We ain't got generational wealth<br>
+It's only a year that I've had these millions<br>
+My whip could've been in the Tokyo Drift 'cause it's fast and furious<br>
+I went from the Toyota Yaris to Urus<br>
+They had their chance but blew it<br>
+Now this gyal want me in her uterus<br>
+Fuck it, I'm rich, let's do it (fuck it)<br>
+Take a look at these diamonds wrong<br>
+It's a life of squintin', can't just stare<br>
+With bae through thick and thin<br>
+She already thick, so I'm halfway there<br>
+Brown and bad<br>
+Couldn't change my mind, I was halfway there<br>
+One hundred meters, huh<br>
+I just put nine gyal in a Sprinter (uh)<br>
+One hundred eaters<br>
+They won't fit in one SUV (nah)<br>
+S-O-S, somebody rescue me<br>
+I got too many gyal, too many-many gyal, I got<br>
+They can last me the next two weeks (uh, huh)<br>
+Alright, like send the address through please<br>
+SUV, the outside white<br>
+The inside brown like Michael Jack<br>
+More time man build a line and trap<br>
+Spend like I don't even like my stack<br>
+Pistol came on a Irish ferry<br>
+Let go and it sound like a tap dance<br>
+The way that I ball<br>
+No yellow, the ref have to give me a black card<br>
+Who did what we're doin' with rap?<br>
+Man couldn't sell out his show after all them years of doin' the cap<br>
+Sprinter, two gyal in a van<br>
+Inter, two man in Milan<br>
+Heard one of my tings datin' P. Diddy<br>
+Need twenty percent of whatever she bags<br>
+Outside, my head in my hands<br>
+I told her my name is Cench<br>
+She said "no, the one on your birth certificate"<br>
+Your boyfriend ran from that diamond test<br>
+'Cause they wasn't legitimate (nah)<br>
+She Turkish-Cypriot but her curves Brazilian<br>
+I want her and bro wants her affiliate<br>
+I'm cheap, still hit a chick like "yo, can I borrow your Netflix?"<br>
+She a feminist, she think I'm sexist<br>
+Twistin' my words, I think she dyslexic<br>
+Give me my space, I'm intergalactic<br>
+Before I give you my Insta password<br>
+I'll give you the pin to my AmEx<br>
+Huh, alright<br>
+This ain't stainless steel, it's platinum<br>
+Dinner table, I got manners, huh<br>
+T-shirt tucked in, napkin<br>
+"Still loadin'" that's the caption<br>
+I've only amounted a minimal fraction<br>
+Eat good, I got indigestion<br>
+Bare snow in my hood, no Aspen<br>
+Can't get rid of my pain with Aspirin<br>
+Dave just came in a Aston, I'm makin' that Maybach Music (Maybach Music)<br>
+They're tryna insult my intelligence, sometimes I may act stupid<br>
+I never went Uni, I been on a campus selling cocaine to students<br>
+If bro let the drumstick beat<br>
+Then something gon' leak, we ain't playin' exclusives<br>
+Take a look at these diamonds wrong<br>
+It's a life of squintin', can't just stare<br>
+With bae through thick and thin<br>
+She already thick, so I'm halfway there<br>
+Brown and bad<br>
+Couldn't change my mind, I was halfway there<br>
+One hundred meters, huh<br>
+I just put nine gyal in a Sprinter<br>
+One hundred eaters<br>
+They won't fit in one SUV (nah)<br>
+S-O-S, somebody rescue me<br>
+I got too many gyal, too many-many gyal, I got<br>
+They can last me the next two weeks (uh, huh)<br>
+Alright, like send the address through please<br>
+Fire for a wife beater<br>
+Can't rock with that, I ain't wearin' a vest<br>
+Man have to send her therapy<br>
+She got a E cup bra, a lot on her chest<br>
+I'm in Jamaica, Oracabess'<br>
+Hit a lick, went Cash Converters<br>
+That don't work, it's pawn, no chess<br>
+I'm doin' more and talkin' less<br>
+I love chillin' with broke bitches<br>
+Man book one flight and they all impressed<br>
+I'm in the G63<br>
+The car hug me like a friend through twist and turns<br>
+Man livin' for nyash and dyin' for nyash, it's fucked<br>
+Don't know which one's worse, I'm fucked<br>
+Bags in his and hers<br>
+What's hers is hers, what's mine is too<br>
+Heard that girl is a gold digger<br>
+It can't be true if she dated you<br>
+AP baby blue, paper's pink<br>
+I'd probably hate me too<br>
+You ever spent six figures and stared at bae like<br>
+"Look what you made me do"?<br>
+Yeah, (alright) started with a Q, didn't wait in line<br>
+Weird, I'm askin' my Blasian one<br>
+"Why you so focused on your Asian side?"<br>
+I know that the jack boys pray that they get to the clubs and Dave's inside<br>
+</p>
+</div>
+<div id="locker">
+<h1 class="dodod">Locker-ArrDee</h1>
+<p class="dodod">
+    It's the best bit out of making music, you know?<br>
+I swear down, it ain't even the bars I spit, innit? It's the adlibs<br>
+It's like—, here, I'll show you, you gotta dash the crowd up<br>
+Say, "La, ha, ha, ha" (HARGO production)<br>
+I've got more than enough in my locker<br>
+I feel like Rocky the moment he got up, ha<br>
+ArrDee, ArrDee, ha, ha, ha, ArrDee, ArrDee, hey, huh<br>
+I've got more than enough in my locker (uh)<br>
+Bruv, I'm a warrior, I feel like Rocky the moment he got up (champ)<br>
+It's some champion shits, I just keep on landin'<br>
+I know it ain't just 'bout all the bangs you hit (huh)<br>
+But I'm still here standin'<br>
+Takin' on the whole lot while I'm off my rocker (my rocker)<br>
+But, I've got more than enough in my locker (more than enough)<br>
+Kick me on the ground and I'll bite your foot<br>
+We don't know about stop (no way)<br>
+We know about loss after loss<br>
+It would turn you soft, turned me to a boss<br>
+A survivor, made of fury, glad that it made me wilder<br>
+'Cause the battles, they made me wiser<br>
+Cover my locker in petrol and watch it light up (fuck it)<br>
+A product of my environment, watch me walk out the flames (no worries)<br>
+Turn my back on the smoke, look close, you can still see the fire in my gaze (ha)<br>
+Carry the torch through the town and use the light to make it out the maze (ayy)<br>
+When you're born this hot, you feel safe in blaze, burning and I don't feel fazed<br>
+Ooh, ArrDizzle the dog had a taste of the blood, fresh wounds in the game<br>
+Now I want it all and I can't be tamed 'til nuttin' but scars remain (can't tame me)<br>
+And I can't refrain from claiming the fame 'cause look at how far I've came (look at it)<br>
+Best wake up and smell my mocha (huh)<br>
+I've got more than enough in my locker (more than enough)<br>
+Bruv, I'm a warrior, I feel like Rocky the moment he got up (uh)<br>
+It's some champion shits, I just keep on landin'<br>
+I know it ain't just 'bout all the bangs you hit (no)<br>
+But I'm still here standin'<br>
+Takin' on the whole lot while I'm off my rocker (my rocker)<br>
+But, I've got more than enough in my locker (more than enough)<br>
+Kick me on the ground and I'll bite your foot<br>
+We don't know about stop (ah)<br>
+We know about loss after loss<br>
+It would turn you soft, turned me to a boss<br>
+A survivor, made of fury, glad that it made me wilder<br>
+'Cause the battles, they made me wiser<br>
+Speedin' ahead, I don't need no visor, I'm a soldier<br>
+Never looked up to an older, bruv, I got here off my own back (Jack)<br>
+Paid homage to greats before me, respect, I'm owed that<br>
+I neglect the throwbacks but the stress, it still rolls 'round me<br>
+That smell, it just sticks (just stays there)<br>
+Just like the cigs that I got on my breath, I want all the smoke<br>
+I feel colossal like Khali (huh)<br>
+They ain't got the bottle like ArrDee<br>
+Who else came in the game, talked their shit<br>
+Actions, backed it like Muhammed Ali? (Tell me who, fam)<br>
+That's what I thought (ha)<br>
+Somebody tell them man to hang up their gloves<br>
+'Cause everybody's bored, plus— (ah)<br>
+I've got more than enough in my locker (more than enough)<br>
+Bruv, I'm a warrior, I feel like Rocky the moment he got up (rah, rah, rah, got up)<br>
+It's some champions shit (rah), I just keep on landin'<br>
+I know it ain't just 'bout all the bangs you hit (no way)<br>
+But I'm still here standin'<br>
+Takin' on the whole lot while I'm off my rocker (off my nut)<br>
+But, I've got more than enough in my locker (more than enough)<br>
+Kick me on the ground and I'll bite your foot<br>
+We don't know about stop (ha)<br>
+We know about loss after loss<br>
+It would turn you soft, turned me to a boss (to a boss)<br>
+A survivor (huh), made of fury, glad that it made me wilder<br>
+'Cause the battles, they made me wiser, uh<br>
+I've got more than enough in my locker (ah)<br>
+</p>
+</div>
+    </body>
+</html>
